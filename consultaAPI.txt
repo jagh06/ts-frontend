@@ -1,0 +1,20 @@
+formas de consumir APIs en Next.js:
+
+getStaticProps: obtener los datos cuando se crea el build
+getStaticPaths: obtener el listado de páginas que se van a crear cuando se realiza el build 
+getServerSideProps: los datos se obtienen en cada request
+
+StaticProps: utilizar cuando la informacion no cambia en cada request: unsa página informativa, 
+documentación, trámites, anuncios.
+
+ServerSideProps: utilizar cuando la información cambia de forma continua en cada request o 
+donde la página se actualiza cada poco tiempo (página de delivery, hoteleria).
+
+http://localhost:1337/api/hotels?populate=*
+para ver las imagenes
+
+coment and descoment
+CTRL + K + C
+CTRL + K + U
+
+ 

@@ -1,0 +1,54 @@
+.bodyslider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    background-color: rgb(90, 4, 4);
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.image {
+    margin: 3px;
+}
+
+.controlprev {
+    margin-left: 10px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 10px;
+
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controlnext {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 10px;
+
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}

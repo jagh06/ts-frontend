@@ -1,0 +1,45 @@
+.card {
+    border: 1px solid rgb(201, 199, 199);
+    margin-top: 50px;
+    border-radius: 7px;
+    width: 25rem;
+   
+    /* position */
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: red;
+}
+
+.contenido {
+    padding: 0.4rem;
+}
+
+.image {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.precio {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.precio h1 {
+    font-size: 20px;
+}
+
+.link {
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(67, 140, 236);
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+}
+.link:hover {
+    background-color: blue;
+    cursor: pointer;
+}

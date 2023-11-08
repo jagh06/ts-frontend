@@ -1,0 +1,71 @@
+.registerclient {
+    display: block;
+    margin: auto;
+    padding: auto;
+    height: 100%;
+    position: relative;
+    padding-bottom: 20rem;
+    min-height: 100vh;
+}
+.backgroung {
+    width: 50%;
+    align-items: center;
+    margin: 1rem auto;
+    padding-top: 2em;
+
+}
+.form {
+    border: 1px solid rgb(131, 128, 128);
+    border-radius: 5px;
+    padding: 2rem;
+    align-items: center;
+}
+
+.field p {
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.field div {
+    margin-top: -1.9rem;
+    padding-top: 0px;
+}
+
+.field input {
+    border: 1px solid rgb(77, 76, 76);
+    height: 5rem;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.divbutton {
+    padding-top: 20px;
+}
+
+.button {
+    border: none;
+    background-color: rgb(38, 95, 219);
+    height: 5rem;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+}
+.button:hover {
+    background-color: rgb(86, 135, 241);
+    cursor: pointer;
+}
+.footer {
+    padding: 2rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+/* mensaje de usuario existente */
+.mesaggeExists {
+    width: 40%;
+    color: red;
+}

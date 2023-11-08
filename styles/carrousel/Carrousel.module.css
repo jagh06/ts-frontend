@@ -1,0 +1,66 @@
+
+
+/* swiperslide */
+
+.app {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+
+}
+
+.swiper {
+    padding: 2rem;
+}
+
+.reslide {
+    position: relative;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 350px;
+    border-radius: 20px;
+}
+
+.swipernavbtns button {
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 0%, 100%);
+    color: #fff;
+    margin: 0px 0.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    transition: all .5s;
+}
+
+.swipernavbtns button:hover {
+    background-color: hsl(0, 11%, 91%);
+    cursor: pointer;
+}
+
+
+/* estilo div de botones  */
+.divbuttonprev {
+    z-index: 1;
+    position: absolute;
+    margin-left: 20px;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.divbuttonnext {
+    z-index: 1;
+    position: absolute;
+    margin-right: 20px;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
