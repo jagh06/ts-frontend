@@ -69,3 +69,21 @@
     width: 40%;
     color: red;
 }
+.warning {
+    color: red;
+    font-size: 13px;
+}
+
+.divinput{
+    position: relative;
+}
+
+.divinput span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.divinput input{
+    padding-left: 50px;
+}

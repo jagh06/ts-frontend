@@ -99,3 +99,8 @@
     font-size: 20px;
     color: white;
 }
+
+.spanemail span{
+    color: blue;
+    font-weight: bold;
+}

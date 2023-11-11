@@ -23,16 +23,17 @@ export default function SetEmail() {
   const router = useRouter();
 
   const handleFormSubmit = async (query) => {
+    const addedData = { emailAdded: query };
     try {
       const result = await fetchData(query);
       if (result.data === null) {
-        router.push("/client/register");
+        router.push({ pathname: "/client/set-datas", query: addedData });
       } else {
         setRegistrationExists(true);
       }
       setData(result);
     } catch (error) {
-      console.error("el error es:::", error);
+      console.error(error);
     }
   };
 
@@ -43,7 +44,6 @@ export default function SetEmail() {
       </Head>
       <div className={styles.registerclient}>
         <div className={styles.backgroung}>
-
           <Email onSubmit={handleFormSubmit} />
           {registrationExists ? (
             <p className={styles.mesaggeExists}>Esta cuenta está en uso.</p>
@@ -52,7 +52,6 @@ export default function SetEmail() {
           <footer className={styles.footer}>
             <LoginInfo />
           </footer>
-
         </div>
       </div>
     </main>

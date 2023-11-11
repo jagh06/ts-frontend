@@ -5,14 +5,19 @@ import { useRouter } from "next/router";
 
 const Dashboard = () => {
   const router = useRouter();
+  const { token } = router.query;
+
   const handleClick = () => {
     router.push('/client/dashboard/add-lodging')
   }
+
+
   return (
     <LayoutClient pagina="Dashboard">
       <main className="contenedor">
         <div>
-          <h2>Bienvenido user</h2>
+          <h2>Bienvenido</h2>
+          <h3>{token}</h3>
           <div className={styles.card}>
             <p>Agrega tu hotel y disfruta de los beneficios que ofrece TS</p>
             <button className={styles.button} onClick={handleClick}>Agregar hotel</button>
